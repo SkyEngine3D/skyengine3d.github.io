@@ -4,7 +4,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/images/</loc>
+            <loc>https://skyengine3d.github.io/images/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -12,14 +12,14 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/posts/</loc>
+            <loc>https://skyengine3d.github.io/posts/</loc>
             <priority>0</priority>
           </url>
     
   
     
       <url>
-            <loc>https://SkyEngine.github.io/authors/</loc>
+            <loc>https://skyengine3d.github.io/authors/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -27,7 +27,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/categories/</loc>
+            <loc>https://skyengine3d.github.io/categories/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -35,7 +35,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/tags/ecs/</loc>
+            <loc>https://skyengine3d.github.io/tags/ecs/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -43,7 +43,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/posts/ecs/</loc>
+            <loc>https://skyengine3d.github.io/posts/ecs/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -51,7 +51,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/tags/features/</loc>
+            <loc>https://skyengine3d.github.io/tags/features/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -59,7 +59,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/tags/posts/</loc>
+            <loc>https://skyengine3d.github.io/tags/posts/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -67,7 +67,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/series/posts/</loc>
+            <loc>https://skyengine3d.github.io/series/posts/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -75,7 +75,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/series/</loc>
+            <loc>https://skyengine3d.github.io/series/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -83,7 +83,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/</loc>
+            <loc>https://skyengine3d.github.io/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -91,7 +91,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/tags/</loc>
+            <loc>https://skyengine3d.github.io/tags/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -99,7 +99,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/about/</loc>
+            <loc>https://skyengine3d.github.io/about/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -107,7 +107,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/posts/start/</loc>
+            <loc>https://skyengine3d.github.io/posts/start/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -115,7 +115,7 @@
   
     
       <url>
-            <loc>https://SkyEngine.github.io/features/</loc>
+            <loc>https://skyengine3d.github.io/features/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>

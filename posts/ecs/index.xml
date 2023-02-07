@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ECS system on SkyEngine</title>
-    <link>https://SkyEngine.github.io/posts/ecs/</link>
+    <link>https://skyengine3d.github.io/posts/ecs/</link>
     <description>Recent content in ECS system on SkyEngine</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>he</language><atom:link href="https://SkyEngine.github.io/posts/ecs/index.xml" rel="self" type="application/rss+xml" />
+    <language>he</language><atom:link href="https://skyengine3d.github.io/posts/ecs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
