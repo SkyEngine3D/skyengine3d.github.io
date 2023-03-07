@@ -28,5 +28,16 @@
 אז מה זה בעצם מנוע רינדור?מנוע רינדור מהווה אבסטרקציה בשביל לצייר על המסך עצמים. הוא עושה שימוש בכרטיס הגרפי של המחשב - GPU בשביל להמיר לוגיקה (למשל מודל תלת ממדי) לתמונה דו ממדית שאפשר להציג על מסך.</description>
     </item>
     
+    <item>
+      <title>פוסט שלישי PBR</title>
+      <link>https://skyengine3d.github.io/posts/pbr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://skyengine3d.github.io/posts/pbr/</guid>
+      <description>בהמשך לפוסטים הקודמים על המנוע רינדור שאני מפתח: פוסט 1 פוסט 2
+הוספתי את הפיצ&amp;rsquo;רים הבאים
+רינדור PBR תמיכה באנימציות של מודלים תאורה מבוססת תמונה (IBL) מערכת טקסטורות ניתן לקרוא על חלק מהפיצ&amp;rsquo;רים האלה בקצרה כאן פיצ&amp;rsquo;רים</description>
+    </item>
+    
   </channel>
 </rss>
