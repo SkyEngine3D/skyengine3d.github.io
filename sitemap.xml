@@ -35,7 +35,7 @@
   
     
       <url>
-            <loc>https://skyengine3d.github.io/tags/ecs/</loc>
+            <loc>https://skyengine3d.github.io/tags/ecs-system/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -51,6 +51,22 @@
   
     
       <url>
+            <loc>https://skyengine3d.github.io/tags/engine/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
+            <loc>https://skyengine3d.github.io/series/engine/</loc>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
+    
+      <url>
             <loc>https://skyengine3d.github.io/tags/features/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
@@ -59,7 +75,7 @@
   
     
       <url>
-            <loc>https://skyengine3d.github.io/tags/posts/</loc>
+            <loc>https://skyengine3d.github.io/tags/pbr/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -67,7 +83,7 @@
   
     
       <url>
-            <loc>https://skyengine3d.github.io/series/posts/</loc>
+            <loc>https://skyengine3d.github.io/tags/rendering/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
