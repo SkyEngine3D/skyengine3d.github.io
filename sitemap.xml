@@ -147,7 +147,7 @@
   
     
       <url>
-            <loc>https://skyengine3d.github.io/posts/pbr/</loc>
+            <loc>https://skyengine3d.github.io/features/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
@@ -155,7 +155,7 @@
   
     
       <url>
-            <loc>https://skyengine3d.github.io/features/</loc>
+            <loc>https://skyengine3d.github.io/posts/pbr/</loc>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>

@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>he</language><atom:link href="https://skyengine3d.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Bloom</title>
+      <link>https://skyengine3d.github.io/posts/bloom/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://skyengine3d.github.io/posts/bloom/</guid>
+      <description>מימשתי אפקט Bloom כמו ב Unity במנוע רינדור שאני מפתח.
+אפקט Bloom הוא אפקט טבעי שנראה כאשר יש עצם בוהק מאוד ונוצרת הילה סביבו (למשל השמש) . אפשר לראות Bloom בתמונות כאשר יש חשיפת יתר ומקור אור שכהוא פוגע במלצמה הוא &amp;ldquo;שורף&amp;rdquo; את התמונה.</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://skyengine3d.github.io/posts/bloom/featured2.jpg" />
+    </item>
+    
+    <item>
       <title>עליי</title>
       <link>https://skyengine3d.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -25,6 +36,20 @@
       <description>Features&gt;Features # Core
 Shaders. Physics Engine. Entities system. Light, uniforms. Model loading &amp;amp; Mesh System. Animations. 3D Model Loading supports all major types such as FBX, glTF, obj, collada and more.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://skyengine3d.github.io/features/featured.jpg" />
+    </item>
+    
+    <item>
+      <title>רינדור מבוסס פיזיקה</title>
+      <link>https://skyengine3d.github.io/posts/pbr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://skyengine3d.github.io/posts/pbr/</guid>
+      <description>בהמשך לפוסטים הקודמים על המנוע רינדור שאני מפתח:
+Start - 1
+Ecs - 2
+הוספתי את הפיצ&amp;rsquo;רים הבאים
+רינדור PBR תמיכה באנימציות של מודלים תאורה מבוססת תמונה (IBL) מערכת טקסטורות ניתן לקרוא על חלק מהפיצ&amp;rsquo;רים האלה בקצרה כאן פיצ&amp;rsquo;רים</description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://skyengine3d.github.io/posts/pbr/feature.jpg" />
     </item>
     
   </channel>

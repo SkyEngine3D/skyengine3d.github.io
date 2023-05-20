@@ -10,16 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>פוסט שלישי רינדור מבוסס פיזיקה &middot; SkyEngine</title>
-  <meta name="title" content="פוסט שלישי רינדור מבוסס פיזיקה &middot; SkyEngine" />
+  <title>רינדור מבוסס פיזיקה &middot; SkyEngine</title>
+  <meta name="title" content="רינדור מבוסס פיזיקה &middot; SkyEngine" />
   
   <meta name="description" content="מנוע רינדור" />
   
   
   
   <link rel="canonical" href="https://skyengine3d.github.io/posts/pbr/" />
-  
-  <link rel="alternate" type="application/rss+xml" href="/posts/pbr/index.xml" title="SkyEngine" />
   
   
   
@@ -68,20 +66,49 @@
   
   
   
-  <meta property="og:title" content="פוסט שלישי רינדור מבוסס פיזיקה" />
+  <meta property="og:title" content="רינדור מבוסס פיזיקה" />
 <meta property="og:description" content="PBR" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://skyengine3d.github.io/posts/pbr/" /><meta property="og:image" content="https://skyengine3d.github.io/posts/pbr/feature.jpg"/><meta property="og:site_name" content="SkyEngine" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://skyengine3d.github.io/posts/pbr/" /><meta property="og:image" content="https://skyengine3d.github.io/posts/pbr/feature.jpg"/><meta property="article:section" content="posts" />
+
+<meta property="og:site_name" content="SkyEngine" />
 <meta property="og:see_also" content="https://skyengine3d.github.io/posts/ecs/" /><meta property="og:see_also" content="https://skyengine3d.github.io/posts/start/" />
 
 
   <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://skyengine3d.github.io/posts/pbr/feature.jpg"/>
-<meta name="twitter:title" content="פוסט שלישי רינדור מבוסס פיזיקה"/>
+<meta name="twitter:title" content="רינדור מבוסס פיזיקה"/>
 <meta name="twitter:description" content="PBR"/>
 
   
-  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "",
+    "name": "רינדור מבוסס פיזיקה",
+    "headline": "רינדור מבוסס פיזיקה",
+    "description": "PBR",
+    "abstract": "בהמשך לפוסטים הקודמים על המנוע רינדור שאני מפתח:\nStart - 1\nEcs - 2\nהוספתי את הפיצ\u0026rsquo;רים הבאים\nרינדור PBR תמיכה באנימציות של מודלים תאורה מבוססת תמונה (IBL) מערכת טקסטורות ניתן לקרוא על חלק מהפיצ\u0026rsquo;רים האלה בקצרה כאן פיצ\u0026rsquo;רים",
+    "inLanguage": "he",
+    "url" : "https:\/\/skyengine3d.github.io\/posts\/pbr\/",
+    "author" : {
+      "@type": "Person",
+      "name": "SkyEngine"
+    },
+    
+    
+    
+    
+    
+    
+    "keywords": ["PBR","Rendering"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "885"
+  }]
+  </script>
+
 
   
   
@@ -360,10 +387,13 @@
       
 
 
-
-
-
-
+<article>
+  
+    
+     
+    
+    
+      
 
 
 <div id="hero" class="h-[150px] md:h-[200px]"></div>
@@ -391,11 +421,66 @@
     });
 </script>
 
- <header>
-  
-  <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">פוסט שלישי רינדור מבוסס פיזיקה</h1>
-  <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
     
+  
+  
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/"
+      >SkyEngine home</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline ">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/"
+      >posts</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline hidden">
+    <a
+      class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
+      href="/posts/pbr/"
+      >רינדור מבוסס פיזיקה</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      רינדור מבוסס פיזיקה
+    </h1>
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -420,15 +505,150 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
+  <span>885 מילים</span><span class="px-2 text-primary-500">&middot;</span><span title="זמן קריאה">5 דקות</span>
+  
+
+  
+  
 </div>
 
 
-  </div>
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/pbr/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    PBR
+  </span>
+</span>
+
+  </span>
+  
+  <span style="margin-top:0.5rem" class="mr-2" onclick="window.open(&#34;/tags/rendering/&#34;,'_self');">
+    <span class="flex">
+  <span
+    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400"
+  >
+    Rendering
+  </span>
+</span>
+
+  </span>
+  
+  
+  
+  
+</div>
+
+
+
+    </div>
   </header>
-  <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row">
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+     
+    <div class="order-first sm:max-w-prose lg:ml-auto px-0 lg:order-last lg:max-w-xs ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky  lg:top-[140px] ">
+        <details open class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    תוכן עניינים
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#יישום-הטכניקה">יישום הטכניקה</a></li>
+        <li><a href="#טקסטורות">טקסטורות</a></li>
+        <li><a href="#סיכום">סיכום</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    תוכן עניינים
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#יישום-הטכניקה">יישום הטכניקה</a></li>
+        <li><a href="#טקסטורות">טקסטורות</a></li>
+        <li><a href="#סיכום">סיכום</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+
+      </div>
+      </div>
+      
+      <div class="min-w-0 min-h-0 max-w-prose">
+        
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5" >
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        Engine - This article is part of a series.
+    </summary>
     
-    <div class="min-w-0 min-h-0 max-w-prose">
-      <p>בהמשך לפוסטים הקודמים על המנוע רינדור שאני מפתח:</p>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://skyengine3d.github.io/posts/start/">
+            Part 1: פוסט ראשון
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://skyengine3d.github.io/posts/ecs/">
+            Part 2: ECS system
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 3: This Article
+    </div>
+    
+    
+
+</details>
+
+
+        <p>בהמשך לפוסטים הקודמים על המנוע רינדור שאני מפתח:</p>
 <div dir="ltr">
   <p><a href="/posts/start/"  title="Start" >
     Start - 1</a></p>
@@ -451,7 +671,7 @@
 
 
 
-<div id="gallery-1684607742843632600">
+<div id="gallery-1684608727180910200">
   
   <img src="pbr.jpg" class="grid-w33" />
   <img src="pbr1.png" class="grid-w33" />
@@ -463,7 +683,7 @@
 <script>
 
   document.addEventListener("DOMContentLoaded", function () {
-    var elem = document.querySelector('#gallery-1684607742843632600');
+    var elem = document.querySelector('#gallery-1684608727180910200');
     var pckry = new Packery(elem, {
       percentPosition: true,
       gutter: 5,
@@ -689,7 +909,7 @@
 
 
 
-<div id="gallery-1684607742843632600">
+<div id="gallery-1684608727180910200">
   
   <img src="Engine1.jpg" class="grid-w33" />
   <img src="Engine2.jpg" class="grid-w33" />
@@ -700,7 +920,7 @@
 <script>
 
   document.addEventListener("DOMContentLoaded", function () {
-    var elem = document.querySelector('#gallery-1684607742843632600');
+    var elem = document.querySelector('#gallery-1684608727180910200');
     var pckry = new Packery(elem, {
       percentPosition: true,
       gutter: 5,
@@ -717,26 +937,136 @@
     <span></span>
 </video>
 
+        </br></br>
+        
+<details style="margin-left:0px" class="mt-2 mb-5 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5">
+    <summary
+        class="py-1 text-lg font-semibold cursor-pointer bg-primary-200 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-primary-800 dark:text-neutral-100">
+        Engine - This article is part of a series.
+    </summary>
+    
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://skyengine3d.github.io/posts/start/">
+            Part 1: פוסט ראשון
+        </a>
     </div>
-    <script>
-      var oid = "views_posts\\pbr\\_index.he.md"
-      var oid_likes = "likes_posts\\pbr\\_index.he.md"
-    </script>
     
     
-    <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        <a href="https://skyengine3d.github.io/posts/ecs/">
+            Part 2: ECS system
+        </a>
+    </div>
+    
+    
+    
+    <div
+        class="py-1 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+        Part 3: This Article
+    </div>
+    
+    
+
+</details>
+
+
+      </div>
+      <script>
+        var oid = "views_posts\\pbr\\index.he.md"
+        var oid_likes = "likes_posts\\pbr\\index.he.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
   </section>
-  
-  <section class="mt-10 prose dark:prose-invert">
-    <p class="py-8 border-t">
-      <em>אין כרגע מאמרים ברשימה זו.</em>
-    </p>
-  </section>
-  
+  <footer class="pt-8 max-w-prose print:hidden">
 
     
 
+
+    
+    
+    
+
+    
+
+    
+
+    
   
+  <section class="flex flex-row flex-wrap justify-center pt-4 text-xl">
+    
+      
+      <a
+      target="_blank"
+      class="m-1 rounded bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
+      href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://skyengine3d.github.io/posts/pbr/&amp;title=%d7%a8%d7%99%d7%a0%d7%93%d7%95%d7%a8%20%d7%9e%d7%91%d7%95%d7%a1%d7%a1%20%d7%a4%d7%99%d7%96%d7%99%d7%a7%d7%94"
+      title="שיתוף בלינקדאין"
+      aria-label="שיתוף בלינקדאין"
+      >
+      
+
+  <span class="relative block icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+
+  </span>
+
+
+    </a>
+      
+    
+  </section>
+
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+        </span>
+        <span>
+          
+            <a class="flex text-right group ml-3" href="/posts/bloom/">
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >Bloom</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                </span>
+              </span>
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+            </a>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
       <div class="pointer-events-none absolute top-[100vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
   <a href="#the-top"
     class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
