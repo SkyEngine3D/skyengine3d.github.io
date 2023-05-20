@@ -13,7 +13,7 @@
       
       <guid>https://skyengine3d.github.io/posts/bloom/</guid>
       <description>מימשתי אפקט Bloom כמו ב Unity במנוע רינדור שאני מפתח.
-אפקט Bloom הוא אפקט טבעי שנראה כאשר יש עצם בוהק מאוד ונוצרת הילה סביבו (למשל השמש) . אפשר לראות Bloom בתמונות כאשר יש חשיפת יתר ומקור אור שכהוא פוגע במלצמה הוא &amp;ldquo;שורף&amp;rdquo; את התמונה.</description>
+אפקט Bloom הוא אפקט טבעי שנראה כאשר יש עצם בוהק מאוד ונוצרת הילה סביבו (למשל השמש) . אפשר לראות Bloom בתמונות כאשר יש חשיפת יתר ומקור אור שכשהוא פוגע במלצמה הוא &amp;ldquo;שורף&amp;rdquo; את התמונה.</description>
       <media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://skyengine3d.github.io/posts/bloom/featured2.jpg" />
     </item>
     
