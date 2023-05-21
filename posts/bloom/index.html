@@ -106,7 +106,7 @@
     "keywords": ["Engine","Bloom"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "523"
+    "wordCount": "589"
   }]
   </script>
 
@@ -503,7 +503,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <span>523 מילים</span><span class="px-2 text-primary-500">&middot;</span><span title="זמן קריאה">3 דקות</span>
+  <span>589 מילים</span><span class="px-2 text-primary-500">&middot;</span><span title="זמן קריאה">3 דקות</span>
   
 
   
@@ -566,24 +566,139 @@
         <p>מימשתי אפקט Bloom כמו ב Unity במנוע רינדור שאני מפתח.</p>
 <p>אפקט Bloom הוא אפקט טבעי שנראה כאשר יש עצם בוהק מאוד ונוצרת הילה סביבו (למשל השמש) .
 אפשר לראות Bloom בתמונות כאשר יש חשיפת יתר  ומקור אור שכשהוא פוגע במלצמה הוא &ldquo;שורף&rdquo; את התמונה.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        srcset="
+        /posts/bloom/Bloom-example_hub103f855b075f7548fec81c0fe630c9d_51106_330x0_resize_q75_box.jpg 330w,
+        /posts/bloom/Bloom-example_hub103f855b075f7548fec81c0fe630c9d_51106_660x0_resize_q75_box.jpg 660w,
+        /posts/bloom/Bloom-example_hub103f855b075f7548fec81c0fe630c9d_51106_1024x0_resize_q75_box.jpg 1024w,
+        /posts/bloom/Bloom-example_hub103f855b075f7548fec81c0fe630c9d_51106_1320x0_resize_q75_box.jpg 2x"
+        src="/posts/bloom/Bloom-example_hub103f855b075f7548fec81c0fe630c9d_51106_660x0_resize_q75_box.jpg"
+        alt="bloom"
+      />
+      
+      
+    </figure>
+  
+
+</p>
 <p>במשחקי מחשב האפקט נעשה בדרך כלל ב - Post processing, כלומר אחרי שעיבדנו את הסצנה מוסיפים לה האפקט.
 האפקט קיים במשחקי מחשב מתחילת שנות ה 2000 בערך, ולמרות שלאפקט יש פוטנציאל גדול להפוך כל סנצה למרהיבה וראליסטית אם ממשים אותו בצורה שלומיאלית או משתמשים בו בהגזמה הוא יכול להפוך גם את הסצנה היפה ביותר לאסון לעניים. (<a href="http://gangles.ca/2008/07/18/bloom-disasters/"   target="_blank">
     Bloom Disasters - The Quixotic Engineer</a>)</p>
 <p>את המימוש של האפקט עשיתי בדומה לצורה שבה הוא ממומש ב Unity Engine ובעוד הרבה מקומות.
 את המקור למימוש ניתן למצוא במצגת מאת היוצרים של המשחק Call of Duty Advanced Warfare בה הם מספרים איך מימשו את אפקטי ה Post processing במשחק, ובין היתר Bloom.</p>
 <p>המימוש נעשה ב 3 שלבים
-תהליך down sampling בו דוגמים את התמונה ומורידים את הרזולוציה שלה כמה פעמים.
-תהליך up sampling בו דוגמים את התמונה שעשינו לה down sampling ומעלים את הרזולוציה שלה לרזולוציה המקורית.
+תהליך Downsampling בו דוגמים את התמונה ומורידים את הרזולוציה שלה כמה פעמים.
+תהליך Upsampling בו דוגמים את התמונה שעשינו לה Downsampling ומעלים את הרזולוציה שלה לרזולוציה המקורית.
 שילוב של התמונה המקורית והתמונה שקיבלנו בתהליך הקודם.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        srcset="
+        /posts/bloom/bloom-diagram_hua5dff86bf2152010e5863c5d8a0b428f_57286_330x0_resize_box_3.png 330w,
+        /posts/bloom/bloom-diagram_hua5dff86bf2152010e5863c5d8a0b428f_57286_660x0_resize_box_3.png 660w,
+        /posts/bloom/bloom-diagram_hua5dff86bf2152010e5863c5d8a0b428f_57286_1024x0_resize_box_3.png 1024w,
+        /posts/bloom/bloom-diagram_hua5dff86bf2152010e5863c5d8a0b428f_57286_1320x0_resize_box_3.png 2x"
+        src="/posts/bloom/bloom-diagram_hua5dff86bf2152010e5863c5d8a0b428f_57286_660x0_resize_box_3.png"
+        alt="bloom diagram"
+      />
+      
+      <figcaption>דיאגרמה</figcaption>
+    </figure>
+  
+
+</p>
 <p>בפירוט התהליך הוא כזה - לוקחים את התמונה המקורית, מורידים את הרזולוציה שלה בחצי וחוזרים על התהליך מספר פעמים, כאשר בכל פעם שאנחנו מורידים את הרזולוציה אנחנו דוגמים את התמונה ומטשטשים אותה מעצם הורדת הרזולוציה.</p>
 <p>המימוש המדויק נעשה עם משקולות בהן ניתן משקל יותר גדול לפיקסלים שקרובים לפיקסל אותו אנו דוגמים במעבר מהרזולוציה המקורית לרזולוציה הנמוכה ממנה, כאשר המטרה היא לדגום מפיקסלים שליד פיקסל מסוים בשביל להעריך מה יהיה הצבע שלו.</p>
-<p>לאחר שסיימנו לבצע את תהליך הורדת האיכות של התמונה מספר פעמים נבצע upsampling בשביל להחזיר אותה לרזולוציה המקורית, אך לא נקפוץ ישר לתמונה המקורית אלא נעלה בהדרגה את כמות הפיקסלים כמספר הפעמים שבהן הורדנו את הפיקסלים, עד לקבלת התמונה ברזולוציה המקורית.</p>
-<p>גם בתהליך ה upsmapling אנחנו נדגום את הפיקסלים ונעריך מה יהיה צבע הפיקסל שעליו אנחנו עובדים.</p>
+<p>לאחר שסיימנו לבצע את תהליך הורדת האיכות של התמונה מספר פעמים נבצע Upsampling בשביל להחזיר אותה לרזולוציה המקורית, אך לא נקפוץ ישר לתמונה המקורית אלא נעלה בהדרגה את כמות הפיקסלים כמספר הפעמים שבהן הורדנו את הפיקסלים, עד לקבלת התמונה ברזולוציה המקורית.</p>
+<p>גם בתהליך ה Upsampling אנחנו נדגום את הפיקסלים ונעריך מה יהיה צבע הפיקסל שעליו אנחנו עובדים.</p>
 <p>אם לפשט בתהליך אנחנו מאבדים פיקסלים ומעריכים איך התמונה היתה נראה ברזולוציה נמוכה יותר, ולכן אנחנו מקבלים טשטוש מסוים (כי זה קירוב), ובכיוון ההפוך הדבר זהה, אנחנו מעריכים איך התמונה היתה נראת אם היו לה יותר פיקסלים כאשר את המעבר ליותר פקסלים אנחנו מבצעים מהתמונה המטושטשת.</p>
 <p>בסיום התהליך נקבל תמונה מטושטשת ואותה נשלב עם התמונה המקורית כאשר יהיה משקל גדול באופן ניכר לתמונה המקורית במיזוג בניהן.</p>
 <p>במימוש שלי הוספתי שלב נוסף שקודם לשלבים שתיארתי ובו אני מחשב איזורים בתמונה שעוברים סף מסוים על מנת להקנות רק לאזורים שבאמת בוהקים בתמונה את האפקט.</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        srcset="
+        /posts/bloom/Sponza_hu6bb6a52f2ca83420e010251bee8f19f3_555015_330x0_resize_q75_box.jpg 330w,
+        /posts/bloom/Sponza_hu6bb6a52f2ca83420e010251bee8f19f3_555015_660x0_resize_q75_box.jpg 660w,
+        /posts/bloom/Sponza_hu6bb6a52f2ca83420e010251bee8f19f3_555015_1024x0_resize_q75_box.jpg 1024w,
+        /posts/bloom/Sponza_hu6bb6a52f2ca83420e010251bee8f19f3_555015_1320x0_resize_q75_box.jpg 2x"
+        src="/posts/bloom/Sponza_hu6bb6a52f2ca83420e010251bee8f19f3_555015_660x0_resize_q75_box.jpg"
+        alt="sponza"
+      />
+      
+      <figcaption>הסצנה הסופית בה ניתן לראות שיש אזורים בתמונה שיותר בהוקים מאחרים כאשר הם מוארים על ידי מקור אור.</figcaption>
+    </figure>
+  
+
+</p>
+<p>בתמונה למעלה רואים את הסצנה לאחר הפעלת threshold כך שרק אזורים בהירים באמת יעברו עיבוד.
+ובתמונה שלאחריה רואים את הסצנה לאחר 4 הפעלות של האלגוריתם ל Downsampling</p>
+<p>
+
+
+
+
+  
+  
+    
+  
+  
+    <figure>
+      
+      <img
+        class="my-0 rounded-md"
+        srcset="
+        /posts/bloom/blur_hu408fc00d78e149b5ca628fca99bd126c_54044_330x0_resize_q75_box.jpg 330w,
+        /posts/bloom/blur_hu408fc00d78e149b5ca628fca99bd126c_54044_660x0_resize_q75_box.jpg 660w,
+        /posts/bloom/blur_hu408fc00d78e149b5ca628fca99bd126c_54044_1024x0_resize_q75_box.jpg 1024w,
+        /posts/bloom/blur_hu408fc00d78e149b5ca628fca99bd126c_54044_1320x0_resize_q75_box.jpg 2x"
+        src="/posts/bloom/blur_hu408fc00d78e149b5ca628fca99bd126c_54044_660x0_resize_q75_box.jpg"
+        alt="downsampled"
+      />
+      
+      <figcaption>בתמונה העליונה הסצנה לאחר הפעלת threshold כך שרק האזורים שאינם בשחור יעברו עיבוד.
+בתמונה התחתונה הסצנה לאחר 4 הפעלות של האלגוריתם ל Downsampling</figcaption>
+    </figure>
+  
+
+</p>
 <p>התוצאה מוצגת בסרטון, אפשר לראות בו קסדה שמחזירה אור ובאזורים מסוימים היא בוהקת יותר כאשר קרן אור פוגעת בה ומקבלים הילה או זוהר. הסביבה מתחלפת ובכל אחת מהסביבות יש תאורה היקיפית קצת שונה.</p>
-<p>בחלק הבא בסרטון נטען  מודל שנקרא Sponza (זה מדול של ארמון אמיתי שנמצא בקרואטיה <a href="https://en.wikipedia.org/wiki/Sponza_Palace"   target="_blank">
+<p>בחלק הבא בסרטון נטען מודל שנקרא Sponza (זה מדול של ארמון אמיתי שנמצא בקרואטיה <a href="https://en.wikipedia.org/wiki/Sponza_Palace"   target="_blank">
     Sponza Palace - Wikipedia</a>). ואפשר לראות בצד ימין אינדיקטורים לחלקים בוהקים בסצנה ולתמונה במצבי טשטוש שונים (רזולציות שונות).
 בהמשך אני משחק עם ההגדרות ומציג עוד דוגמאות של האפקט.</p>
 <p><video controls preload="auto" width="100%"  playsinline class="html-video">
